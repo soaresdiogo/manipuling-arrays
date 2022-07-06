@@ -9,6 +9,27 @@ const data = [
     { brand: "HP", model: "Pavillion", price: 1499, isNew: true }
   ];
 ```
+
+#### PUSH - it add a new item in original array
+```
+  data.push({ brand: "Xiaomi", model: "Readmi Pro", price: 799, isNew: true })
+  console.log(data);
+```
+#### SPREAD - it update the array, but it create a new one, in that case it doesn't modify the original one
+```
+  const newData = [...data, { brand: "Xiaomi", model: "Readmi Pro", price: 799, isNew: true }];
+  console.log('original', data);
+  console.log('newData', newData);
+```
+#### SLICE - it returns selected elements in an array, as a new array.
+```
+  console.log('SLICE', data.slice(1, 3));
+```
+#### POP - it removes the last element of array, but it update the original array
+```
+  data.pop();
+  console.log('POP', data);
+```  
 #### REVERSE - it reverses the original array
 ```
   const dataReverse = data.reverse();
